@@ -1,9 +1,8 @@
-/**
- * searchCards
- */
+/* https://scryfall.com/docs/api/ */
+
 export async function searchCards(cardName: string, language: string = 'en'): Promise<any> {
     const url =
-        `https://api.scryfall.com/cards/search?order=released&include_extras=true&q=name=${encodeURIComponent(cardName)} lang:${language}`;
+        `https://api.scryfall.com/cards/search?q=name=${encodeURIComponent(cardName)} lang:${language}`;
 
     const response = await fetch(url);
 
