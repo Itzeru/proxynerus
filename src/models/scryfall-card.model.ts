@@ -18,7 +18,7 @@ export interface ScryfallCard {
 
     /* Art */
     artist?: string,
-    image_art_crop?: string,
+    image_uris?: {art_crop: string},
 
     /* Idioma */
     lang: string,

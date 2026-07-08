@@ -1,8 +1,8 @@
-import { searchCards } from "./services/scryfall.service";
+import { ScryfallService } from "./services/scryfall.service";
 
 async function main(): Promise<void> {
     try {
-        const result = await searchCards("Ral, Monsoon Mage");
+        const result = await ScryfallService.searchCards("Ral, Monsoon Mage");
         console.log(result);
     }
     catch (error) {
