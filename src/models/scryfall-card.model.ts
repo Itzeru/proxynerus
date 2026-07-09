@@ -4,6 +4,7 @@
 export interface ScryfallCard {
     /* Principals */
     name: string;
+    layout: string;
     mana_cost?: string;
     type_line?: string;
     oracle_text?: string;
@@ -21,7 +22,6 @@ export interface ScryfallCard {
     image_uris?: {art_crop: string},
 
     /* Idioma */
-    lang: string,
     printed_name?: string,
     printed_text?: string,
     printed_type_line?: string
