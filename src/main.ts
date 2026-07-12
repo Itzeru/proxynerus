@@ -1,4 +1,3 @@
-import createCardComponent from "./pages/components/card";
 import { ScryfallService } from "./services/scryfall.service";
 
 async function main(): Promise<void> {
@@ -8,15 +7,8 @@ async function main(): Promise<void> {
     }
 
     try {
-        const result = await ScryfallService.searchCards("Goblin");
+        const result = await ScryfallService.searchCards("Ral Zarek");
         console.log(result);
-        // Testing component card.ts
-        for (let i = 0; i < result.length; i++) {
-            const card = result[i];
-            const cardContainer = document.createElement("div");
-            app.appendChild(cardContainer);
-            createCardComponent(cardContainer, card.name, card.art ?? '');
-        }
     }
     catch (error) {
         console.error(error);

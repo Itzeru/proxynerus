@@ -1,5 +1,3 @@
-
-
 export default function createCardComponent(container: HTMLElement, name: string, imageUrl?: string, initialCopies = 1) : void {
   let copies = initialCopies;
 

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proxynerus</title>
+    <link rel="stylesheet" href="/styles/printing.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="upload-card" class="card upload-card">
+        <div class="upload-icon">+</div>
+        <p>Add cards</p>
+      </div>
+    </div>
+    <button id="print-btn">Print</button>
+    <input type="file" id="image-picker" accept="image/png" multiple hidden />
+    <script type="module" src="/src/pages/printing.ts"></script>
+  </body>
+</html>
