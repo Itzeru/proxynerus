@@ -16,6 +16,13 @@
     </div>
     <button id="print-btn">Print</button>
     <input type="file" id="image-picker" accept="image/png" multiple hidden />
+    <script type="importmap">
+      {
+        "imports": {
+          "pdf-lib": "/node_modules/pdf-lib/dist/pdf-lib.esm.js"
+        }
+      }
+    </script>
     <script type="module" src="/src/pages/printing.ts"></script>
   </body>
 </html>
