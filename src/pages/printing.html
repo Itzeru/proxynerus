@@ -8,10 +8,22 @@
     <link rel="stylesheet" href="/styles/printing.css" />
   </head>
   <body>
-    <div id="app">
-      <div id="upload-card" class="card upload-card">
-        <div class="upload-icon">+</div>
-        <p>Add cards</p>
+    <div class="layout">
+      <header id="header" class="site-header">
+        <span class="header-title">
+          <img src="/public/favicon.svg" />
+        </span>
+        <nav class="header-nav">
+          <a href="/" class="header-link">Home</a>
+          <a href="/editor" class="header-link">Editor</a>
+          <a href="/printing" class="header-link">Printing</a>
+        </nav>
+      </header>
+      <div id="app">
+        <div id="upload-card" class="card upload-card">
+          <div class="upload-icon">+</div>
+          <p>Add cards</p>
+        </div>
       </div>
     </div>
     <button id="print-btn">Print</button>

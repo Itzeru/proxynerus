@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   display: flex;
   flex-wrap: wrap;
@@ -70,4 +75,47 @@
 
 #print-btn:hover {
   background: #444;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 24px;
+  background: #1e1e1e;
+  color: #eee;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.header-link {
+  color: #ccc;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.header-link:hover {
+  background: #333;
+}
+
+.header-link.active {
+  background: #444;
+  color: #fff;
+}
+
+.header-title img {
+  height: 64px;
+  width: auto;
+  display: block;
 }
